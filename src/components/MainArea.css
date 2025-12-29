@@ -1,0 +1,15 @@
+.main-area {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .main-area {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+}
+

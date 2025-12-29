@@ -1,0 +1,17 @@
+.top-status-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  height: 10%;
+  min-height: 80px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .top-status-bar {
+    gap: 8px;
+    margin-bottom: 12px;
+    min-height: 70px;
+  }
+}
+

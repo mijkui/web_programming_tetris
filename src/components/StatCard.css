@@ -1,0 +1,58 @@
+.stat-card {
+  flex: 1;
+  background: linear-gradient(135deg, #1e2440 0%, #151a2f 100%);
+  border: 1.5px solid rgba(0, 150, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 150, 255, 0.3), transparent);
+}
+
+.stat-card-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 6px;
+}
+
+.stat-card-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px) {
+  .stat-card {
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .stat-card-label {
+    font-size: 9px;
+    margin-bottom: 4px;
+  }
+
+  .stat-card-value {
+    font-size: 20px;
+  }
+}
+

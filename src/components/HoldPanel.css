@@ -1,0 +1,47 @@
+.hold-panel {
+  width: 80px;
+  background: linear-gradient(135deg, #1e2440 0%, #151a2f 100%);
+  border: 1.5px solid rgba(0, 150, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.hold-panel-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.hold-panel-preview {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+@media (max-width: 480px) {
+  .hold-panel {
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .hold-panel-label {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+
+  .hold-panel-preview {
+    min-height: 50px;
+  }
+}
+
