@@ -1,187 +1,186 @@
-# Tetris 遊戲介紹與玩法指南
+# Tetris Game Guide
 
-## 🎮 遊戲介紹
+## 🎮 Game Overview
 
-Tetris（俄羅斯方塊）是一款經典的益智拼圖遊戲，由俄羅斯程式設計師 Alexey Pajitnov 於 1984 年發明。這款遊戲已經成為史上最受歡迎的電子遊戲之一。
+Tetris is a classic puzzle game invented by Russian programmer Alexey Pajitnov in 1984. It has become one of the most popular video games of all time.
 
-### 遊戲目標
+### Game Objective
 
-遊戲的目標是通過移動、旋轉和放置從螢幕頂部落下的方塊（Tetrominoes），來填滿完整的橫行。當一行被完全填滿時，該行會被消除，上方的方塊會向下移動，玩家可以獲得分數。隨著遊戲進行，方塊下落的速度會逐漸加快，難度也會增加。
+The goal of the game is to fill complete horizontal lines by moving, rotating, and placing falling blocks (Tetrominoes) that drop from the top of the screen. When a line is completely filled, it disappears, the blocks above fall down, and the player earns points. As the game progresses, blocks fall faster and the difficulty increases.
 
-### 遊戲特色
+### Game Features
 
-- **經典玩法**：保持原汁原味的 Tetris 遊戲體驗
-- **現代化 UI**：採用深藍色主題的街機風格介面
-- **視覺效果**：3D 立體方塊設計，高對比度顯示
-- **即時預覽**：顯示下一個方塊和保留方塊
-- **幽靈方塊**：顯示方塊的預期落地位置
-
----
-
-## 🎯 如何遊玩
-
-### 基本操作
-
-#### 移動方塊
-- **向左移動**：將方塊向左移動一格
-- **向右移動**：將方塊向右移動一格
-- **向下移動**：加速方塊下落（軟降）
-- **硬降**：立即將方塊降到底部
-
-#### 旋轉方塊
-- **順時針旋轉**：將方塊順時針旋轉 90 度
-- **逆時針旋轉**：將方塊逆時針旋轉 90 度
-
-#### 保留方塊（Hold）
-- **保留功能**：可以將當前方塊保留起來，稍後再使用
-- **策略運用**：保留有用的方塊（如 I 型方塊）來清除多行
-
-### 遊戲介面說明
-
-#### 頂部狀態欄
-- **LINES（消除行數）**：顯示已消除的總行數
-- **LEVEL（等級）**：當前遊戲等級，等級越高，方塊下落速度越快
-- **SCORE（分數）**：當前得分
-- **TOP SCORE（最高分）**：歷史最高分數記錄
-
-#### 主遊戲區域
-- **HOLD 面板（左側）**：顯示當前保留的方塊
-- **遊戲區域（中央）**：10×20 的遊戲場地，方塊在此落下和堆疊
-- **NEXT 面板（右側）**：顯示接下來會出現的 4 個方塊
-
-#### 底部提示區
-- 顯示操作提示和遊戲說明
+- **Classic Gameplay**: Authentic Tetris experience
+- **Modern UI**: Dark blue arcade-themed interface
+- **Visual Effects**: 3D block design with high contrast display
+- **Real-time Preview**: Shows next piece and held piece
+- **Ghost Piece**: Displays where the piece will land
 
 ---
 
-## 🧩 方塊類型
+## 🎯 How to Play
 
-遊戲中有 7 種不同形狀的方塊，每種都有獨特的顏色：
+### Basic Controls
 
-1. **I 型（青色）**：長條形，4 格直線
-   - 最適合一次清除 4 行（Tetris！）
+#### Moving Pieces
+- **Move Left**: Move the piece one space to the left
+- **Move Right**: Move the piece one space to the right
+- **Move Down**: Soft drop (accelerate downward)
+- **Hard Drop**: Instantly drop to the bottom
 
-2. **O 型（黃色）**：正方形，2×2 方塊
-   - 無法旋轉，但很穩定
+#### Rotating Pieces
+- **Rotate Clockwise**: Rotate the piece 90 degrees clockwise
+- **Rotate Counter-clockwise**: Rotate the piece 90 degrees counter-clockwise
 
-3. **T 型（紫色）**：T 字形
-   - 用途廣泛，適合填補空隙
+#### Holding Pieces
+- **Hold Function**: Store the current piece for later use
+- **Strategic Use**: Hold useful pieces (like the I-piece) to clear multiple lines
 
-4. **S 型（綠色）**：S 字形
-   - 與 Z 型互補
+### Interface Guide
 
-5. **Z 型（紅色）**：Z 字形
-   - 與 S 型互補
+#### Top Status Bar
+- **LINES**: Total number of lines cleared
+- **LEVEL**: Current game level - higher levels mean faster falling speed
+- **SCORE**: Current score
+- **TOP SCORE**: Highest score record
 
-6. **J 型（藍色）**：J 字形
-   - 與 L 型互補
+#### Main Game Area
+- **HOLD Panel (Left)**: Shows the currently held piece
+- **Game Area (Center)**: 10×20 game board where pieces fall and stack
+- **NEXT Panel (Right)**: Shows the next 4 upcoming pieces
 
-7. **L 型（橙色）**：L 字形
-   - 與 J 型互補
-
----
-
-## 📊 得分系統
-
-### 消除行數得分
-- **1 行**：100 × 等級
-- **2 行**：300 × 等級
-- **3 行**：500 × 等級
-- **4 行（Tetris）**：800 × 等級
-
-### 額外加分
-- **軟降**：每格 1 分
-- **硬降**：每格 2 分
-
-### 等級提升
-- 每消除 10 行，等級提升 1 級
-- 等級越高，方塊下落速度越快，得分倍數也越高
+#### Bottom Hint Area
+- Displays control hints and game instructions
 
 ---
 
-## 🎯 遊戲策略
+## 🧩 Piece Types
 
-### 基礎技巧
+There are 7 different piece shapes in the game, each with a unique color:
 
-1. **保持場地平整**
-   - 盡量保持方塊堆疊平整，避免出現過高的凸起
-   - 優先填補低處的空隙
+1. **I-Piece (Cyan)**: Long horizontal line of 4 blocks
+   - Perfect for clearing 4 lines at once (Tetris!)
 
-2. **預留 I 型方塊空間**
-   - 在場地一側預留一個 4 格寬的垂直通道
-   - 當獲得 I 型方塊時，可以一次清除 4 行（Tetris）
+2. **O-Piece (Yellow)**: 2×2 square
+   - Cannot rotate, but very stable
 
-3. **善用保留功能**
-   - 保留 I 型方塊用於清除多行
-   - 保留 O 型方塊用於填補角落
+3. **T-Piece (Purple)**: T-shape
+   - Versatile, good for filling gaps
 
-4. **觀察下一個方塊**
-   - 提前規劃下一個方塊的放置位置
-   - 根據即將到來的方塊調整策略
+4. **S-Piece (Green)**: S-shape
+   - Complements the Z-piece
 
-5. **使用幽靈方塊**
-   - 幽靈方塊顯示方塊的預期落地位置
-   - 幫助你精確放置方塊
+5. **Z-Piece (Red)**: Z-shape
+   - Complements the S-piece
 
-### 進階技巧
+6. **J-Piece (Blue)**: J-shape
+   - Complements the L-piece
+
+7. **L-Piece (Orange)**: L-shape
+   - Complements the J-piece
+
+---
+
+## 📊 Scoring System
+
+### Line Clear Scores
+- **1 line**: 100 × level
+- **2 lines**: 300 × level
+- **3 lines**: 500 × level
+- **4 lines (Tetris)**: 800 × level
+
+### Bonus Points
+- **Soft Drop**: 1 point per cell
+- **Hard Drop**: 2 points per cell
+
+### Level Progression
+- Level increases by 1 every 10 lines cleared
+- Higher levels mean faster falling speed and higher score multipliers
+
+---
+
+## 🎯 Game Strategies
+
+### Basic Tips
+
+1. **Keep the Board Flat**
+   - Try to keep the stack flat, avoid high peaks
+   - Prioritize filling low gaps
+
+2. **Reserve Space for I-Piece**
+   - Keep a 4-block wide vertical channel on one side
+   - When you get an I-piece, you can clear 4 lines at once (Tetris)
+
+3. **Use Hold Strategically**
+   - Hold I-pieces for multi-line clears
+   - Hold O-pieces for filling corners
+
+4. **Watch the Next Pieces**
+   - Plan ahead for the next piece's placement
+   - Adjust strategy based on upcoming pieces
+
+5. **Use the Ghost Piece**
+   - The ghost piece shows where the current piece will land
+   - Helps you place pieces precisely
+
+### Advanced Techniques
 
 1. **T-Spin**
-   - 使用 T 型方塊進行旋轉放置
-   - 可以獲得額外分數和清除難以處理的行
+   - Use T-pieces with rotation placement
+   - Can earn bonus points and clear difficult lines
 
-2. **組合消除**
-   - 計劃連續消除多行
-   - 一次消除多行比分次消除得分更高
+2. **Combo Clears**
+   - Plan consecutive multi-line clears
+   - Clearing multiple lines at once scores higher than separate clears
 
-3. **速度控制**
-   - 在低等級時建立良好的基礎
-   - 高等級時保持冷靜，快速決策
-
----
-
-## ⚠️ 遊戲結束條件
-
-當新的方塊無法完全進入遊戲區域時，遊戲結束。這通常發生在：
-- 方塊堆疊到頂部
-- 新方塊的初始位置被佔據
+3. **Speed Control**
+   - Build a good foundation at lower levels
+   - Stay calm and make quick decisions at higher levels
 
 ---
 
-## 🎨 遊戲特色功能
+## ⚠️ Game Over Conditions
 
-### 視覺效果
-- **3D 立體方塊**：每個方塊都有高光和陰影效果
-- **高對比度**：清晰的視覺層次，易於識別
-- **深藍色主題**：護眼的深色背景
-- **流暢動畫**：方塊移動和消除的流暢過渡
-
-### 輔助功能
-- **幽靈方塊**：半透明顯示方塊落地位置
-- **下一個預覽**：提前看到 4 個即將到來的方塊
-- **保留功能**：可以保留一個方塊稍後使用
+The game ends when a new piece cannot fully enter the game area. This usually happens when:
+- Blocks are stacked to the top
+- The new piece's spawn position is blocked
 
 ---
 
-## 🚀 開始遊戲
+## 🎨 Game Features
 
-1. 打開遊戲應用程式
-2. 觀察頂部的狀態欄，了解當前分數和等級
-3. 查看右側的 NEXT 面板，了解即將到來的方塊
-4. 使用控制按鈕或手勢移動和旋轉方塊
-5. 將方塊放置在合適的位置，填滿橫行以消除
-6. 隨著等級提升，挑戰更高的分數！
+### Visual Effects
+- **3D Blocks**: Each block has highlight and shadow effects
+- **High Contrast**: Clear visual hierarchy, easy to identify
+- **Dark Blue Theme**: Eye-friendly dark background
+- **Smooth Animations**: Fluid transitions for piece movement and line clears
 
----
-
-## 💡 小貼士
-
-- **保持冷靜**：不要慌張，仔細思考每個方塊的放置位置
-- **練習旋轉**：熟練掌握各種方塊的旋轉方式
-- **觀察模式**：注意方塊的顏色和形狀，快速識別
-- **節奏感**：找到適合自己的遊戲節奏
-- **享受遊戲**：最重要的是享受遊戲的樂趣！
+### Helper Features
+- **Ghost Piece**: Semi-transparent display of landing position
+- **Next Preview**: See 4 upcoming pieces in advance
+- **Hold Function**: Store one piece for later use
 
 ---
 
-祝您遊戲愉快，創造高分記錄！🎮✨
+## 🚀 Getting Started
 
+1. Open the game application
+2. Check the top status bar to see your current score and level
+3. Look at the NEXT panel on the right to see upcoming pieces
+4. Use keyboard controls to move and rotate pieces
+5. Place pieces in the right positions to fill horizontal lines
+6. Challenge yourself to achieve higher scores as levels increase!
+
+---
+
+## 💡 Tips
+
+- **Stay Calm**: Don't panic, think carefully about each piece placement
+- **Practice Rotation**: Master the rotation patterns for each piece type
+- **Pattern Recognition**: Pay attention to piece colors and shapes for quick identification
+- **Find Your Rhythm**: Discover the game pace that works for you
+- **Have Fun**: Most importantly, enjoy the game!
+
+---
+
+Happy gaming and good luck setting high scores! 🎮✨
