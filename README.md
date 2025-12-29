@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tetris - Portrait Arcade UI
 
 A modern, portrait-oriented Tetris game UI built with React and TypeScript, featuring a dark blue arcade theme with card-based design.
@@ -153,5 +154,4 @@ This project is for educational purposes.
 
 ---
 
-For detailed game instructions in Chinese, see [GAME_GUIDE.md](./GAME_GUIDE.md)
-
+For detailed game instructions, see [GAME_GUIDE.md](./GAME_GUIDE.md)
