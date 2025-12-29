@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tetris - Portrait Arcade UI
 
 A modern, portrait-oriented Tetris game UI built with React and TypeScript, featuring a dark blue arcade theme with card-based design.
